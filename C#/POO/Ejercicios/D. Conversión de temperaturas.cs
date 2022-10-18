@@ -1,7 +1,18 @@
 using System;
 class Programa {
   static void Main() {
+      ConvertTemp Clima = new ConvertTemp();
 
+      int Temp = int.Parse(Console.ReadLine());
+
+      Clima.CambiarTemp(Temp);
+
+      Console.WriteLine("{0} {1} {2}", 
+                        Clima.GradosKelvin(),
+                        Clima.GradosFahrenheit(),
+                        Clima.GradosRéaumur()
+                       );
+    
   }
 }
 
@@ -23,13 +34,13 @@ class ConvertTemp {
   public int ObtenerTemp (){
     return GradosCelcius;
   }
-  public GradosKelvin (){
+  public int GradosKelvin (){
     return GradosCelcius + 273;
   }
-  public GradosFahrenheit (){
+  public int GradosFahrenheit (){
     return 9 / 5 * GradosCelcius + 32;
   }
-   public GradosRéaumur (){
+   public int GradosRéaumur (){
     return 4 * GradosCelcius / 5  ;
   }
   
