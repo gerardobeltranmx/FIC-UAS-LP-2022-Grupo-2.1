@@ -3,7 +3,7 @@ class Programa {
   static void Main() {
     
     Cilindro Tanque = new Cilindro(20, 100);
-    Console.WriteLine ("Superficie={0:F2} Volumen={1:F2}"
+    Console.WriteLine ("Superficie={0:F2} Volumen={1:F2}",
               Tanque.ObtenerSuperficie(),
               Tanque.ObtenerVolumen()
           );
@@ -13,7 +13,7 @@ class Programa {
 }
 class Circulo{
   private double radio;
-  public Circulo(int r){
+  public Circulo(double r){
     radio=r;
   }
   public void CambiarRadio(double r){
