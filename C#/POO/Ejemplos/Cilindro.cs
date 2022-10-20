@@ -7,8 +7,6 @@ class Programa {
               Tanque.ObtenerSuperficie(),
               Tanque.ObtenerVolumen()
           );
-    
-
   }
 }
 class Circulo{
