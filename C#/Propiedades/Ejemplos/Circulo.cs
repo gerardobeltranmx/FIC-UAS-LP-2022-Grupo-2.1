@@ -12,9 +12,7 @@ class Programa {
 }
 
 class Circulo {
-
-        private double radio;
-
+       private double radio;
         // Propiedad Radio
         public double Radio
         {
@@ -35,7 +33,7 @@ class Circulo {
                 return ObtenerArea();
             }
         }
-        public double ObtenerArea(){
+        private double ObtenerArea(){
           return Math.PI * Math.Pow(radio,2);
         }
 }
