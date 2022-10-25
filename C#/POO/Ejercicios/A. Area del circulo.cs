@@ -2,9 +2,17 @@ using System;
 class Programa {
   static void Main() {
     Circulo Obj = new Circulo();
-    double Radio = double.Parse(Console.ReadLine());  
-    Obj.CambiarRadio(Radio);
-    Console.WriteLine("{0:F2}", Obj.ObtenerArea() );
+    try {
+      double Radio = double.Parse(Console.ReadLine());  
+      Obj.CambiarRadio(Radio);
+      Console.WriteLine("{0:F2}", Obj.ObtenerArea() );
+    }
+    catch(Exception err){
+        //Console.WriteLine("Error en la radio indicado, intenta de nuevo");
+        Console.WriteLine(err.Message);
+    }
+    
+    
   }
 }
 
