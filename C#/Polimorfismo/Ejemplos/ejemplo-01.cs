@@ -3,7 +3,7 @@ class Programa {
   static void Main() {
     
     figura fig; 
-     int [] datos = Console.ReadLine().Split(" ");
+     string [] datos = Console.ReadLine().Split(" ");
     int Lado1 = int.Parse(datos[0]) ;
     int Lado2 = int.Parse(datos[1]) ;
     
