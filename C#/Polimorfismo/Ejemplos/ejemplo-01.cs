@@ -81,7 +81,7 @@ class rectangulo : figura{
             
         }
         public override double Area(){
-            return Base * Altura;
+            return Base * Altura/2;
         }
         public override double Perimetro()
         {
