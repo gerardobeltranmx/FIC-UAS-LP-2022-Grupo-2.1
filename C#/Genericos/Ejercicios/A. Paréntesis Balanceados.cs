@@ -13,6 +13,8 @@ class HelloWorld {
     for (int k=0; k<N ; k++){
     
     Cadena = Console.ReadLine();
+    Pila.Clear();
+    Error = false;
     for (int i=0; i < Cadena.Length && Error== false; i++){
         car = Cadena[i];
         if ( car=='(' || car=='[' || car == '{'   )
@@ -40,10 +42,10 @@ class HelloWorld {
               Error = true;
         }
     }    
-    if (Error==true)
-            Console.WriteLine("NO");
-        else
+    if (Pila.Count == 0 && Error==false)
             Console.WriteLine("SI");
+        else
+            Console.WriteLine("NO");
    } // Cierra for k             
   } // Fin main
 }
